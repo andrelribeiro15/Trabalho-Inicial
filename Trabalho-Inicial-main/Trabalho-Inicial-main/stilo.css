@@ -1,0 +1,214 @@
+body{
+
+    margin: 0 auto;
+    background-color: #2e7d32;
+
+}
+
+header{
+    height: 170px;
+    text-align: center;
+    background: url(Imagens/floresta.png)  right top fixed;
+    
+
+nav{
+
+    clear: both;
+    width: 90%;
+    margin: 0px auto;
+    height: 100px;
+    
+}
+}
+
+nav a{
+    color: white;
+    text-decoration: none;
+    text-align:left;
+
+}
+
+nav .opcao{
+
+    float: left;
+    width: 30%;
+    padding: 10px 0 ;
+    margin: 0 1%;
+    font-size: 20px;
+
+}
+
+p{
+    text-justify: auto;
+
+}
+
+
+.opcao {
+    display: inline-block;
+    margin: 0 10px;
+    color: white;
+    text-decoration: none;
+}
+
+section p{
+    clear: both;
+    text-align:justify;
+    margin: 20px 80px;
+   
+    padding: 10px;
+}
+
+
+
+section {
+    margin-top: 100px; /* Espaçamento para o conteúdo */
+    text-align: center;
+}
+
+*{ margin: 0; padding: 0;}
+
+.slider{
+
+    overflow: hidden;
+    height: 300px;
+    width: 100%;
+    position: relative;
+}
+
+.slider img {
+
+    position:absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    height: 100%;
+    width: auto;
+    animation: fade 5s infinite;
+}
+
+.slider a{
+
+    text-decoration: none;
+    padding: 0;
+    margin: 0;
+
+}
+
+@keyframes fade {
+
+    0%{
+        opacity: 0;
+    }
+
+    20%{
+        opacity: 1;
+    }
+
+    33%{
+        opacity: 1;
+    }
+
+    53%{
+        opacity: 1;
+    }
+
+    100%{
+        opacity: 0;
+    }
+}
+
+
+form {
+    width: 80%;
+    margin: auto;
+    text-align: left;
+}
+fieldset {
+    border: 1px solid #ccc;
+    margin-bottom: 20px;
+    padding: 20px;
+}
+legend {
+    font-size: 1.2em;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+label {
+    display: block;
+    margin-bottom: 8px;
+}
+
+.linha{
+
+    width: 100%;
+
+}
+
+.login{
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+    
+    
+}
+.formLogin{
+
+    display: flex;
+    flex-direction: column;
+    border-radius: 7px;
+    padding: 40px;
+    box-shadow: 10px 10px 40px;
+    gap: 5px;
+    background-color: #81c784;
+    align-items: center;
+}
+
+.formLogin input{
+
+    padding: 15px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    margin-bottom: 20px;
+    margin-top: 5px;
+    border-radius: 4px;
+    transition: all linear 160ms;
+    outline: none;
+
+
+}
+
+.formLogin input:focus{
+
+    border: 1px solid #81c784;
+
+
+}
+
+.formLogin label{
+    font-size: 25px;
+    font-weight: 600;
+    text-align: center;
+}
+
+.btn{
+    color: #ccc;
+    font-size: 14px;
+    font-weight: 600;
+    border:  none !important;
+    transition: all linear 160ms;
+    cursor: pointer;
+    margin: 0 !important;
+
+}
+
+.btn:hover{
+
+    transform: scale(1.05);
+    background-color: #2e7d32;
+}
